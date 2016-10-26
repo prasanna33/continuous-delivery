@@ -11,6 +11,7 @@
       <PublishProfile Condition="$(PublishProfile) == ''">Test</PublishProfile>
     <OutputDir>.out</OutputDir>
     <NUnitConsole>packages\NUnit.ConsoleRunner.3.5.0\tools\nunit3-console.exe</NUnitConsole>
+	<AutoParameterizationWebConfigConnectionStrings>false</AutoParameterizationWebConfigConnectionStrings>
   </PropertyGroup>
 
   <ItemGroup>
