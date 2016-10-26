@@ -10,7 +10,7 @@
     <Configuration Condition="$(Configuration) == ''">Release</Configuration>
       <PublishProfile Condition="$(PublishProfile) == ''">Test</PublishProfile>
     <OutputDir>.out</OutputDir>
-    <NUnitConsole>packages\NUnit.ConsoleRunner.3.5.0\tools\nunit3-console.exe</NUnitConsole>	
+    <NUnitConsole>packages\NUnit.ConsoleRunner.3.5.0\tools\nunit3-console.exe</NUnitConsole>
   </PropertyGroup>
 
   <ItemGroup>
@@ -51,7 +51,6 @@
   <Target Name="Test" DependsOnTargets="Build">
     <PropertyGroup>
       <CurrentProject>%(TestProjects.Identity)</CurrentProject>
-	  <AutoParameterizationWebConfigConnectionStrings>false</AutoParameterizationWebConfigConnectionStrings>
     </PropertyGroup>
     
     <MSBuild Projects="$(CurrentProject)\$(CurrentProject).csproj"
