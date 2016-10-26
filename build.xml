@@ -62,7 +62,7 @@
     </CreateItem>  
     
     <PropertyGroup>
-      <NUNitOptions>/result="$(OutputDir)\$(CurrentProject).Results.xml"</NUNitOptions>
+      <NUNitOptions>/result="$(OutputDir)\$(CurrentProject).Results.xml;format=nunit2"</NUNitOptions>
       <NUNitCommand>$(NUnitConsole) $(NUNitOptions) @(TestAssembly)</NUNitCommand>
     </PropertyGroup>
     
