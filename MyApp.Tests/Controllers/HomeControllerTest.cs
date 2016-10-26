@@ -47,8 +47,6 @@ namespace MyApp.Tests.Controllers
             // Act
             ViewResult result = controller.Contact() as ViewResult;
 
-            result = null;
-
             // Assert
             Assert.IsNotNull(result);
         }
